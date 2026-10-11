@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deeksha Brasília — O Despertar da Paz e da Quietude Interior</title>
+  <meta name="description" content="Movimento comunitário de meditação, expansão da consciência e transmissão da Bênção da Unidade (Deeksha) no Distrito Federal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-primary: #D4AF37;
+      --gold-light: #F6E05E;
+      --gold-dark: #AA820A;
+      --midnight-deep: #070B19;
+      --midnight-card: #0F172A;
+      --text-light: #FDFBF7;
+      --text-muted: #94A3B8;
+      --emerald-green: #065F46;
+      --border-gold: rgba(212, 175, 55, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--midnight-deep);
+      color: var(--text-light);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient Glows */
+    .glow-orb {
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(7, 11, 25, 0) 70%);
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+      padding: 1.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-light);
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--gold-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 80%);
+    }
+
+    .brand-text {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      background: linear-gradient(90deg, #FFFFFF, var(--gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-btn {
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold-light);
+      border: 1px solid var(--border-gold);
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--gold-primary);
+      color: var(--midnight-deep);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      z-index: 1;
+      padding: 4rem 1.5rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid var(--border-gold);
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(180deg, #FFFFFF 20%, #E2E8F0 60%, var(--gold-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (min-width: 640px) {
+      .hero h1 { font-size: 3.5rem; }
+      .cta-group { flex-direction: row; }
+    }
+
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
+      color: var(--midnight-deep);
+      border-radius: 9999px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 25px rgba(212, 175, 55, 0.35);
+      transition: all 0.3s ease;
+      min-height: 48px;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(212, 175, 55, 0.55);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+      background: transparent;
+      color: var(--text-light);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      min-height: 48px;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold-primary);
+      background: rgba(212, 175, 55, 0.05);
+    }
+
+    /* Pillars Grid */
+    .section-pillars {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .section-pillars { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .card {
+      background: var(--midnight-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-4px);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 1.25rem;
+      display: inline-block;
+    }
+
+    .card h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.35rem;
+      color: var(--gold-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Event Callout */
+    .event-banner {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 2.5rem 2rem;
+      background: radial-gradient(circle at top, rgba(212, 175, 55, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid var(--gold-primary);
+      border-radius: 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .event-banner h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #FFFFFF;
+    }
+
+    .event-banner p {
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    footer span {
+      color: var(--gold-light);
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-orb"></div>
+
+  <header>
+    <a href="#" class="brand">
+      <div class="brand-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="m6.34 17.66-1.41 1.41"></path>
+          <path d="m19.07 4.93-1.41 1.41"></path>
+        </svg>
+      </div>
+      <div class="brand-text">DEEKSHA BRASÍLIA</div>
+    </a>
+    <a href="#comunidade" class="nav-btn">Entrar na Comunidade</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge-pill">
+        <span>✨ Conexão, Silêncio & Presença</span>
+      </div>
+      <h1>O Despertar da Paz e da Quietude Interior em Brasília</h1>
+      <p>
+        A <strong>Deeksha (A Bênção da Unidade)</strong> é uma transmissão ancestral de graça sutil e ativação neurobiológica. Uma experiência ecumênica que desacelera o tagarelar mental, cura o coração e desperta a consciência no coração do Planalto Central.
+      </p>
+      <div class="cta-group">
+        <a href="#comunidade" class="btn-gold">Participar dos Encontros no Parque</a>
+        <a href="#sobre" class="btn-outline">Entender a Ciência da Deeksha</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section-pillars">
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>Neurobiologia da Paz</h3>
+        <p>
+          Pesquisas neurológicas demonstram que a Deeksha acalma a hiperatividade dos lobos parietais (dissolvendo o estresse da separação e ansiedade) e energiza os lobos frontais, despertando sentimentos espontâneos de alegria, presença e foco.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌳</div>
+        <h3>Encontros ao Ar Livre</h3>
+        <p>
+          Brasília é naturalmente contemplativa. Nossos encontros periódicos no Parque da Cidade Dona Sarah Kubitschek reúnem pessoas em círculos de meditação, música harmoniosa e partilha acolhedora sob as árvores do cerrado.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🕊️</div>
+        <h3>Ecumênico & Sem Dogmas</h3>
+        <p>
+          A Bênção da Unidade não exige crenças específicas nem renúncia à sua fé. Ela aprofunda a sua própria conexão interior — seja você cristão, budista, praticante de yoga, agnóstico ou um livre buscador da paz.
+        </p>
+      </div>
+    </section>
+
+    <section id="comunidade" class="event-banner">
+      <h2>Próximos Encontros no Parque da Cidade</h2>
+      <p>
+        Estamos organizando o nosso próximo encontro comunitário aberto com meditação guiada, música ambiente e transmissão coletiva de Deeksha. Junte-se ao nosso grupo de comunicados para receber as datas e locais exatos em primeira mão.
+      </p>
+      <a href="https://chat.whatsapp.com/convite-deeksha-brasilia" class="btn-gold" style="font-size: 1.1rem; padding: 1.25rem 2.5rem;">
+        Entrar no Grupo Oficial do WhatsApp ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 <strong>Deeksha Brasília</strong> — Movimento Comunitário da Bênção da Unidade.<br>
+      Espiritualidade Aterrada, Presença e Integração no Distrito Federal.
+    </p>
+  </footer>
+</body>
+</html>
