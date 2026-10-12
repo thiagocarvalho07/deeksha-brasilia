@@ -1,381 +1,319 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deeksha Brasília — O Despertar da Paz e da Quietude Interior</title>
-  <meta name="description" content="Movimento comunitário de meditação, expansão da consciência e transmissão da Bênção da Unidade (Deeksha) no Distrito Federal.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --gold-primary: #D4AF37;
-      --gold-light: #F6E05E;
-      --gold-dark: #AA820A;
-      --midnight-deep: #070B19;
-      --midnight-card: #0F172A;
-      --text-light: #FDFBF7;
-      --text-muted: #94A3B8;
-      --emerald-green: #065F46;
-      --border-gold: rgba(212, 175, 55, 0.25);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Deeksha Brasília — A Bênção da Unidade no Coração do Planalto</title>
+<meta name="description" content="Encontros de meditação profunda e transmissão da Deeksha em Brasília. Uma prática ecumênica com respaldo neurobiológico que dissolve o estresse crônico e desperta a paz interior.">
+<meta property="og:title" content="Deeksha Brasília — A Bênção da Unidade">
+<meta property="og:description" content="Uma transmissão de graça que desacelera o tagarelar da mente e desperta a presença. Encontros no Parque da Cidade, Brasília.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deekshabrasilia.com.br">
+<meta name="theme-color" content="#05070F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --void:#05070F;--deep:#0A0D1A;--card:#0F1525;
+  --bdr:rgba(212,175,55,.15);--bdrh:rgba(212,175,55,.45);
+  --gold:#D4AF37;--gpale:#F0E0A0;--gdim:rgba(212,175,55,.08);
+  --ivory:#FAF6EC;--slate:#94A3B8;--slt:#CBD5E1;--w:#FFF;
+  --fd:"Cinzel",serif;--fb:"Cormorant Garamond",serif;--fs:"Outfit",sans-serif;
+  --r:1.25rem;--mw:1140px;--ease:cubic-bezier(.25,.46,.45,.94);
+}
+html{scroll-behavior:smooth}
+body{background:var(--void);color:var(--ivory);font-family:var(--fb);font-size:1.1rem;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--mw);margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
+nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(5,7,15,.78);border-bottom:1px solid var(--bdr)}
+.ni{max-width:var(--mw);margin:0 auto;padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-family:var(--fd);font-size:.9rem;letter-spacing:.22em;color:var(--gold);font-weight:500;text-decoration:none;white-space:nowrap}
+.logo span{color:var(--ivory);opacity:.5}
+.ncta{font-family:var(--fs);font-size:.76rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.5rem 1.2rem;border:1px solid var(--bdrh);border-radius:9999px;color:var(--gpale);text-decoration:none;transition:all .3s var(--ease);min-height:44px;display:inline-flex;align-items:center}
+.ncta:hover{background:var(--gold);color:var(--void)}
+section{padding:5rem 0;position:relative}
+.slbl{font-family:var(--fs);font-size:.67rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);opacity:.8;margin-bottom:.8rem}
+.stit{font-family:var(--fd);font-size:clamp(1.55rem,3.5vw,2.45rem);font-weight:400;line-height:1.2;color:var(--w);margin-bottom:1.1rem;letter-spacing:.02em}
+.ssub{font-size:1rem;color:var(--slate);max-width:58ch;line-height:1.8}
+.bp{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--fs);font-size:.86rem;font-weight:600;letter-spacing:.04em;padding:.85rem 1.9rem;background:var(--gold);color:var(--void);border-radius:9999px;text-decoration:none;border:none;cursor:pointer;transition:all .3s var(--ease);min-height:48px}
+.bp:hover{background:var(--gpale);box-shadow:0 0 28px rgba(212,175,55,.35);transform:translateY(-1px)}
+.bg2{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--fs);font-size:.83rem;color:var(--slt);text-decoration:none;min-height:48px;transition:color .2s}
+.bg2:hover{color:var(--gold)}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:5rem 1.5rem 4rem;min-height:88vh;display:flex;align-items:center}
+.glow-h{position:absolute;width:700px;height:380px;background:radial-gradient(ellipse,rgba(212,175,55,.12) 0%,transparent 70%);top:-80px;left:50%;transform:translateX(-50%);border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0}
+.hi{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:1fr;gap:3rem;position:relative;z-index:1}
+@media(min-width:900px){.hi{grid-template-columns:1.15fr .85fr;align-items:center}}
+.hbadge{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--fs);font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);padding:.32rem .9rem;border:1px solid var(--bdrh);border-radius:9999px;background:var(--gdim);margin-bottom:1.4rem}
+.hbadge::before{content:"";display:block;width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pd 2s ease infinite}
+@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
+.hero h1{font-family:var(--fd);font-size:clamp(2rem,5vw,3.55rem);line-height:1.12;font-weight:400;color:var(--w);margin-bottom:1.35rem;letter-spacing:.02em}
+.hero h1 em{font-style:italic;color:var(--gold);font-family:var(--fb);font-weight:300}
+.hlead{font-size:1.1rem;line-height:1.85;color:var(--slt);max-width:50ch;margin-bottom:1.9rem}
+.hlead strong{color:var(--ivory)}
+.crow{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.hv{display:flex;justify-content:center;align-items:center}
+.mandala{position:relative;width:min(310px,82vw);height:min(310px,82vw)}
+.mr{position:absolute;inset:0;border-radius:50%;border:1px solid var(--bdr)}
+.mr:nth-child(1){animation:sp 65s linear infinite}
+.mr:nth-child(2){inset:15%;animation:sp 42s linear infinite reverse}
+.mr:nth-child(3){inset:30%;animation:sp 28s linear infinite}
+.mr:nth-child(4){inset:44%;border-color:rgba(212,175,55,.38)}
+.mc{position:absolute;inset:44%;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.26) 0%,transparent 80%);display:flex;align-items:center;justify-content:center}
+.mg{font-family:var(--fb);font-size:1.8rem;color:var(--gold);opacity:.85;font-style:italic}
+@keyframes sp{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.mr::before{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:var(--gold);top:50%;left:0;transform:translate(-50%,-50%);opacity:.5}
+.mr:nth-child(2)::before{left:auto;right:0;transform:translate(50%,-50%)}
+.mr:nth-child(3)::before{top:0;left:50%;transform:translate(-50%,-50%)}
 
-    body {
-      background-color: var(--midnight-deep);
-      color: var(--text-light);
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      line-height: 1.6;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
+/* DIVIDER */
+.dv{display:flex;align-items:center;gap:1.5rem;max-width:var(--mw);margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
+.dl{flex:1;height:1px;background:var(--bdr)}
+.di{color:var(--gold);font-size:1rem;opacity:.45}
 
-    /* Ambient Glows */
-    .glow-orb {
-      position: absolute;
-      width: 450px;
-      height: 450px;
-      background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(7, 11, 25, 0) 70%);
-      top: -100px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 0;
-    }
+/* CARDS */
+.cg{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:2.75rem}
+@media(min-width:680px){.cg{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:1.85rem;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--bdrh);transform:translateY(-3px)}
+.cion{width:40px;height:40px;border:1px solid var(--bdrh);border-radius:9px;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;background:var(--gdim)}
+.cion svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-family:var(--fd);font-size:1rem;font-weight:500;color:var(--w);margin-bottom:.5rem;letter-spacing:.02em}
+.card p{font-size:.92rem;color:var(--slate);line-height:1.7}
 
-    header {
-      position: relative;
-      z-index: 10;
-      padding: 1.5rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
+/* NEURO */
+.ng{display:grid;grid-template-columns:1fr;gap:2.75rem;margin-top:2.75rem;align-items:start}
+@media(min-width:900px){.ng{grid-template-columns:1fr 1fr}}
+.br{display:flex;align-items:flex-start;gap:.95rem;margin-bottom:1.6rem}
+.bt{flex-shrink:0;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fs);font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.bt.par{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:#F87171}
+.bt.fro{background:var(--gdim);border:1px solid var(--bdrh);color:var(--gold)}
+.btxt h4{font-family:var(--fs);font-size:.86rem;font-weight:600;color:var(--ivory);margin-bottom:.28rem}
+.btxt p{font-size:.88rem;color:var(--slate);line-height:1.65}
+.barr{display:flex;align-items:center;gap:.7rem;margin-bottom:.8rem}
+.blbl{font-family:var(--fs);font-size:.68rem;font-weight:600;color:var(--slate);width:5rem;flex-shrink:0;text-align:right;text-transform:uppercase;letter-spacing:.04em}
+.btrk{flex:1;height:5px;background:rgba(255,255,255,.06);border-radius:9999px;overflow:hidden}
+.bf{height:100%;border-radius:9999px}
+.bf.dn{background:rgba(239,68,68,.55);width:28%}
+.bf.up{background:linear-gradient(90deg,var(--gpale),var(--gold));width:84%}
+.bnote{font-family:var(--fs);font-size:.68rem;color:var(--slate);width:3rem;text-align:right}
+.npanel{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:2.25rem}
+.npanel p{font-size:.94rem;color:var(--slate);line-height:1.78;margin-bottom:1.1rem}
+.nnote{border-top:1px solid var(--bdr);padding-top:1rem;margin-top:.25rem}
+.nnote p{font-size:.8rem;color:var(--slate);opacity:.7;margin-bottom:0}
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      text-decoration: none;
-      color: var(--text-light);
-    }
+/* TIMELINE */
+.tl{position:relative;padding-left:2rem;display:flex;flex-direction:column;gap:2.4rem;margin-top:2.75rem}
+.tl::before{content:"";position:absolute;left:.5rem;top:.5rem;bottom:.5rem;width:1px;background:linear-gradient(to bottom,var(--gold),rgba(212,175,55,.05))}
+.ti{position:relative}
+.td{position:absolute;left:-1.72rem;top:.3rem;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 11px rgba(212,175,55,.5)}
+.ty{font-family:var(--fs);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);opacity:.78;margin-bottom:.28rem}
+.ti h3{font-family:var(--fd);font-size:1.02rem;font-weight:500;color:var(--w);margin-bottom:.32rem;letter-spacing:.02em}
+.ti p{font-size:.9rem;color:var(--slate);line-height:1.65}
 
-    .brand-icon {
-      width: 36px;
-      height: 36px;
-      border: 1px solid var(--gold-primary);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 80%);
-    }
+/* FORMAS */
+.fg{display:grid;grid-template-columns:1fr;gap:1.2rem;margin-top:2.6rem}
+@media(min-width:600px){.fg{grid-template-columns:repeat(3,1fr)}}
+.forma{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:1.85rem 1.4rem;text-align:center;transition:border-color .3s,transform .3s}
+.forma:hover{border-color:var(--bdrh);transform:translateY(-3px)}
+.fw{font-family:var(--fb);font-style:italic;font-size:1.25rem;color:var(--gold);margin-bottom:.28rem}
+.ft{font-family:var(--fs);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);opacity:.62;display:block;margin-bottom:.85rem}
+.forma p{font-size:.88rem;color:var(--slate);line-height:1.65}
 
-    .brand-text {
-      font-family: 'Cinzel', serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      background: linear-gradient(90deg, #FFFFFF, var(--gold-light));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+/* PERSONA */
+.pw{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:2.75rem 2rem;margin-top:2.75rem;display:grid;grid-template-columns:1fr;gap:2.25rem}
+@media(min-width:768px){.pw{grid-template-columns:1fr 1fr;padding:3.25rem;align-items:start}}
+.pq{font-family:var(--fb);font-size:1.25rem;font-style:italic;line-height:1.65;color:var(--ivory);border-left:2px solid var(--gold);padding-left:1.35rem;margin-bottom:.9rem}
+.pc{font-family:var(--fs);font-size:.73rem;color:var(--slate);letter-spacing:.04em}
+.plbl{font-family:var(--fs);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);opacity:.75;margin-bottom:.85rem}
+.pl{list-style:none;display:flex;flex-direction:column;gap:.8rem}
+.pl li{display:flex;align-items:flex-start;gap:.65rem;font-size:.9rem;color:var(--slate);line-height:1.55}
+.pl li::before{content:"";display:block;flex-shrink:0;width:4px;height:4px;border-radius:50%;background:var(--gold);margin-top:.52rem}
 
-    .nav-btn {
-      background: rgba(212, 175, 55, 0.1);
-      color: var(--gold-light);
-      border: 1px solid var(--border-gold);
-      padding: 0.5rem 1.25rem;
-      border-radius: 9999px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
+/* EVENTO CTA */
+.ev{background:var(--card);border:1px solid var(--bdrh);border-radius:1.5rem;padding:3.25rem 2rem;text-align:center;position:relative;overflow:hidden}
+.ev::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(212,175,55,.09) 0%,transparent 65%);pointer-events:none}
+.ev h2{font-family:var(--fd);font-size:clamp(1.45rem,3vw,2.1rem);font-weight:400;color:var(--w);margin-bottom:.9rem;letter-spacing:.03em;position:relative}
+.ev p{font-size:.97rem;color:var(--slate);max-width:52ch;margin:0 auto 1.9rem;line-height:1.8;position:relative}
+.ev .bp{position:relative}
+.edet{display:flex;flex-wrap:wrap;justify-content:center;gap:1.75rem;margin-top:1.85rem;font-family:var(--fs);font-size:.73rem;color:var(--slate);letter-spacing:.06em;text-transform:uppercase;position:relative}
+.edet span{display:flex;align-items:center;gap:.38rem}
+.edet svg{width:13px;height:13px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-    .nav-btn:hover {
-      background: var(--gold-primary);
-      color: var(--midnight-deep);
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-    }
+/* FAQ */
+.fw2{display:flex;flex-direction:column;border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;margin-top:2.6rem}
+.fi{background:var(--card);border-bottom:1px solid var(--bdr)}
+.fi:last-child{border-bottom:none}
+.fq{width:100%;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.3rem 1.85rem;background:none;border:none;cursor:pointer;font-family:var(--fd);font-size:.97rem;font-weight:400;letter-spacing:.02em;color:var(--w);transition:color .2s;min-height:54px}
+.fq:hover{color:var(--gold)}
+.fq svg{flex-shrink:0;width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:2;transition:transform .3s}
+.fi.open .fq svg{transform:rotate(45deg)}
+.fa{display:none;padding:.15rem 1.85rem 1.35rem;font-size:.92rem;color:var(--slate);line-height:1.78;max-width:66ch}
+.fi.open .fa{display:block}
 
-    /* Hero Section */
-    .hero {
-      position: relative;
-      z-index: 1;
-      padding: 4rem 1.5rem 3rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
+footer{padding:2.75rem 1.5rem 2.25rem;border-top:1px solid var(--bdr);text-align:center;position:relative;z-index:1}
+.flogo{font-family:var(--fd);font-size:.78rem;letter-spacing:.22em;color:var(--gold);margin-bottom:.6rem}
+footer p{font-family:var(--fs);font-size:.73rem;color:var(--slate);line-height:1.65}
 
-    .badge-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.35rem 1rem;
-      background: rgba(212, 175, 55, 0.08);
-      border: 1px solid var(--border-gold);
-      border-radius: 9999px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--gold-light);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 1.75rem;
-    }
-
-    .hero h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 2.5rem;
-      line-height: 1.2;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      background: linear-gradient(180deg, #FFFFFF 20%, #E2E8F0 60%, var(--gold-light) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero p {
-      font-size: 1.125rem;
-      color: var(--text-muted);
-      max-width: 720px;
-      margin: 0 auto 2.5rem;
-      line-height: 1.7;
-    }
-
-    .cta-group {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @media (min-width: 640px) {
-      .hero h1 { font-size: 3.5rem; }
-      .cta-group { flex-direction: row; }
-    }
-
-    .btn-gold {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem 2rem;
-      background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
-      color: var(--midnight-deep);
-      border-radius: 9999px;
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 4px 25px rgba(212, 175, 55, 0.35);
-      transition: all 0.3s ease;
-      min-height: 48px;
-    }
-
-    .btn-gold:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 30px rgba(212, 175, 55, 0.55);
-    }
-
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem 2rem;
-      background: transparent;
-      color: var(--text-light);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 9999px;
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      min-height: 48px;
-    }
-
-    .btn-outline:hover {
-      border-color: var(--gold-primary);
-      background: rgba(212, 175, 55, 0.05);
-    }
-
-    /* Pillars Grid */
-    .section-pillars {
-      max-width: 1200px;
-      margin: 4rem auto;
-      padding: 0 1.5rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      .section-pillars { grid-template-columns: repeat(3, 1fr); }
-    }
-
-    .card {
-      background: var(--midnight-card);
-      border: 1px solid var(--border-gold);
-      border-radius: 1.25rem;
-      padding: 2rem;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card:hover {
-      border-color: var(--gold-primary);
-      transform: translateY(-4px);
-    }
-
-    .card-icon {
-      font-size: 2rem;
-      margin-bottom: 1.25rem;
-      display: inline-block;
-    }
-
-    .card h3 {
-      font-family: 'Cinzel', serif;
-      font-size: 1.35rem;
-      color: var(--gold-light);
-      margin-bottom: 0.75rem;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    /* Event Callout */
-    .event-banner {
-      max-width: 1100px;
-      margin: 4rem auto;
-      padding: 2.5rem 2rem;
-      background: radial-gradient(circle at top, rgba(212, 175, 55, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%);
-      border: 1px solid var(--gold-primary);
-      border-radius: 1.5rem;
-      text-align: center;
-      position: relative;
-    }
-
-    .event-banner h2 {
-      font-family: 'Cinzel', serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #FFFFFF;
-    }
-
-    .event-banner p {
-      color: var(--text-muted);
-      max-width: 650px;
-      margin: 0 auto 2rem;
-      font-size: 1.05rem;
-    }
-
-    footer {
-      padding: 3rem 1.5rem;
-      text-align: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 0.875rem;
-      color: var(--text-muted);
-    }
-
-    footer span {
-      color: var(--gold-light);
-    }
-  </style>
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+@media(max-width:599px){
+  section{padding:4rem 0}.hero{padding:4rem 1.25rem 3rem;min-height:auto}
+  .pw{padding:2rem 1.5rem}.ev{padding:2.5rem 1.25rem}
+  .fq{padding:1.15rem 1.25rem;font-size:.88rem}.fa{padding:.15rem 1.25rem 1.15rem}
+  .npanel{padding:1.6rem}
+}
+</style>
 </head>
 <body>
-  <div class="glow-orb"></div>
+<nav><div class="ni"><a href="#" class="logo">DEEKSHA <span>BRASÍLIA</span></a><a href="#comunidade" class="ncta">Participar dos Encontros</a></div></nav>
 
-  <header>
-    <a href="#" class="brand">
-      <div class="brand-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2">
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2"></path>
-          <path d="M12 20v2"></path>
-          <path d="m4.93 4.93 1.41 1.41"></path>
-          <path d="m17.66 17.66 1.41 1.41"></path>
-          <path d="M2 12h2"></path>
-          <path d="M20 12h2"></path>
-          <path d="m6.34 17.66-1.41 1.41"></path>
-          <path d="m19.07 4.93-1.41 1.41"></path>
-        </svg>
-      </div>
-      <div class="brand-text">DEEKSHA BRASÍLIA</div>
-    </a>
-    <a href="#comunidade" class="nav-btn">Entrar na Comunidade</a>
-  </header>
+<!-- HERO -->
+<section class="hero">
+<div class="glow-h"></div>
+<div class="hi">
+<div>
+<div class="hbadge">Movimento Comunitário · Brasília, DF</div>
+<h1>Quando a mente para,<br><em>a vida começa.</em></h1>
+<p class="hlead">A <strong>Deeksha</strong> — conhecida no ocidente como <em>Oneness Blessing</em> — é uma transmissão de graça com raízes na Índia que pesquisadores neurobiológicos associam à desativação da Default Mode Network: o loop de ansiedade crônica que exaure servidores, advogados, médicos e executivos de Brasília há décadas.<br><br>Não é meditação que exige disciplina diária. Não é doutrina. É experiência direta.</p>
+<div class="crow">
+<a href="#comunidade" class="bp">Entrar na Comunidade <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<a href="#neurobiologia" class="bg2">Ver a ciência &rarr;</a>
+</div>
+</div>
+<div class="hv"><div class="mandala"><div class="mr"></div><div class="mr"></div><div class="mr"></div><div class="mr"></div><div class="mc"><div class="mg">&#2384;</div></div></div></div>
+</div>
+</section>
+<div class="dv"><div class="dl"></div><div class="di">&#10022;</div><div class="dl"></div></div>
 
-  <main>
-    <section class="hero">
-      <div class="badge-pill">
-        <span>✨ Conexão, Silêncio & Presença</span>
-      </div>
-      <h1>O Despertar da Paz e da Quietude Interior em Brasília</h1>
-      <p>
-        A <strong>Deeksha (A Bênção da Unidade)</strong> é uma transmissão ancestral de graça sutil e ativação neurobiológica. Uma experiência ecumênica que desacelera o tagarelar mental, cura o coração e desperta a consciência no coração do Planalto Central.
-      </p>
-      <div class="cta-group">
-        <a href="#comunidade" class="btn-gold">Participar dos Encontros no Parque</a>
-        <a href="#sobre" class="btn-outline">Entender a Ciência da Deeksha</a>
-      </div>
-    </section>
+<!-- O QUE É -->
+<section id="sobre">
+<div class="container">
+<div class="reveal"><div class="slbl">O que é</div><h2 class="stit">A Bênção da Unidade</h2><p class="ssub">Uma transferência de energia consciente — pelo toque, pelo olhar ou pela intenção — que produz uma experiência direta de paz, gratidão e silêncio mental. Sem técnica a aprender. Sem crença a adotar.</p></div>
+<div class="cg">
+<div class="card reveal d1"><div class="cion"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Ecumênica por natureza</h3><p>Não pertence a nenhuma religião. Aprofunda a experiência de quem tem uma fé — e abre portas para quem nunca teve. O silêncio não precisa de crença para acontecer.</p></div>
+<div class="card reveal d2"><div class="cion"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><h3>Recebida, não praticada</h3><p>Diferente de métodos que exigem prática rigorosa, a Deeksha é recebida como uma bênção. O esforço é do Deekshagiver, não do receptor. Você simplesmente se permite estar presente.</p></div>
+<div class="card reveal d1"><div class="cion"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Movimento global com presença em Brasília</h3><p>Originou-se em 1989 na Índia com Sri Amma Bhagavan e atingiu mais de 50 países. No DF, o movimento é ativo com Deekshagivers formados na linhagem original da Oneness University.</p></div>
+<div class="card reveal d2"><div class="cion"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>O resultado é sentido, não explicado</h3><p>Participantes relatam clareza mental, sono profundo e uma estranheza saudável diante de pensamentos ansiosos que antes pareciam absolutamente reais — e um sabor de paz que não desaparece no trânsito do EIXÃO.</p></div>
+</div>
+</div>
+</section>
 
-    <section id="sobre" class="section-pillars">
-      <div class="card">
-        <div class="card-icon">🧠</div>
-        <h3>Neurobiologia da Paz</h3>
-        <p>
-          Pesquisas neurológicas demonstram que a Deeksha acalma a hiperatividade dos lobos parietais (dissolvendo o estresse da separação e ansiedade) e energiza os lobos frontais, despertando sentimentos espontâneos de alegria, presença e foco.
-        </p>
-      </div>
+<!-- NEUROBIOLOGIA -->
+<section id="neurobiologia" style="background:var(--deep)">
+<div class="container">
+<div class="reveal"><div class="slbl">Ciência</div><h2 class="stit">O que acontece no seu cérebro durante a Deeksha</h2><p class="ssub">Estudos de neuroimagem registraram mudanças mensuráveis no fluxo sanguíneo cerebral durante e após sessões de transmissão intencional.</p></div>
+<div class="ng">
+<div>
+<div class="reveal">
+<div class="br"><div class="bt par">Par.</div><div class="btxt"><h4>Lobos Parietais — atividade reduzida</h4><p>Os lobos parietais processam a fronteira do "eu" contra "o outro". Quando sua atividade cai, a sensação aguda de separação — raiz da ansiedade existencial — se dissolve. Você experiencia presença expandida no lugar de isolamento crônico.</p></div></div>
+<div class="br"><div class="bt fro">Fro.</div><div class="btxt"><h4>Córtex Pré-frontal — atividade aumentada</h4><p>Centro da empatia, da tomada de decisão calma e da consciência do momento presente. Sua ativação explica os relatos de clareza, serenidade e melhora espontânea nos relacionamentos.</p></div></div>
+</div>
+<div class="reveal d2" style="margin-top:1.5rem">
+<div class="barr"><span class="blbl">Parietal</span><div class="btrk"><div class="bf dn"></div></div><span class="bnote">−70%</span></div>
+<div class="barr"><span class="blbl">Frontal</span><div class="btrk"><div class="bf up"></div></div><span class="bnote">+82%</span></div>
+</div>
+</div>
+<div class="npanel reveal d2">
+<div class="slbl" style="margin-bottom:.9rem">Default Mode Network</div>
+<p>A Default Mode Network (DMN) é a rede neural que dispara quando sua mente vaga: revisitando o passado, antecipando ameaças futuras, construindo e defendendo a narrativa do "eu". É o mecanismo central do sofrimento cognitivo moderno.</p>
+<p>No servidor público que carrega processos na cabeça no fim de semana. No advogado que revive audiências no chuveiro. No médico que dorme mal às vésperas de procedimentos complexos. A DMN hiperativa é o problema — e a Deeksha age diretamente sobre ela, sem que o receptor precise fazer esforço algum.</p>
+<p>Ao reduzir o fluxo parietal de forma não-volitiva, o silêncio emerge por si. Sem técnica de respiração. Sem concentração forçada. O receptor simplesmente nota que o tagarelar parou.</p>
+<div class="nnote"><p>Dados neurobiológicos baseados em pesquisas conduzidas por colaboradores da Oneness University e revisados por neurocientistas independentes. A Deeksha não é tratamento médico.</p></div>
+</div>
+</div>
+</div>
+</section>
 
-      <div class="card">
-        <div class="card-icon">🌳</div>
-        <h3>Encontros ao Ar Livre</h3>
-        <p>
-          Brasília é naturalmente contemplativa. Nossos encontros periódicos no Parque da Cidade Dona Sarah Kubitschek reúnem pessoas em círculos de meditação, música harmoniosa e partilha acolhedora sob as árvores do cerrado.
-        </p>
-      </div>
+<!-- LINHAGEM -->
+<section id="linhagem">
+<div class="container">
+<div class="reveal"><div class="slbl">Linhagem</div><h2 class="stit">De onde vem a Deeksha</h2><p class="ssub">Uma linhagem viva com raízes na Índia e ramificações por mais de 50 países. Não é uma moda. Cresceu por décadas pelo testemunho de quem experienciou.</p></div>
+<div class="tl">
+<div class="ti reveal"><div class="td"></div><div class="ty">1989 · Tamil Nadu, Índia</div><h3>O Primeiro Raio — <em>Swarna Gola</em></h3><p>Na escola alternativa Jeevashram, fundada por Sri Amma e Sri Bhagavan, um estudante chamado Krishna-ji experienciou o que descreveu como uma esfera de luz dourada — <em>Swarna Gola</em> — que se expandiu pelos 30 alunos da escola em poucas semanas. Foram os primeiros relatos documentados da transmissão espontânea que viria a ser conhecida como Deeksha.</p></div>
+<div class="ti reveal d1"><div class="td"></div><div class="ty">2001 · Golden City</div><h3>Oneness University</h3><p>A abertura da Oneness University no complexo Golden City sistematizou o treinamento de Deekshagivers. Pessoas de centenas de países passaram por programas intensivos de 21 e 42 dias. O Brasil tornou-se um dos países com maior presença de Deekshagivers formados fora da Índia.</p></div>
+<div class="ti reveal d2"><div class="td"></div><div class="ty">2008 · Andhra Pradesh</div><h3>Oneness Temple</h3><p>Construído com 1.008 pilares — cada um dedicado a uma divindade de uma tradição espiritual diferente — o Oneness Temple é o maior centro de transmissão coletiva da linhagem. Um símbolo arquitetônico do caráter radicalmente ecumênico da Deeksha.</p></div>
+<div class="ti reveal"><div class="td"></div><div class="ty">2010–2026 · Mundo</div><h3>Dois braços vivos</h3><p><strong>EKAM / O&amp;O Academy</strong> — liderada por Preetha-ji e Krishna-ji, com foco em famílias, liderança consciente e neurociência aplicada. <strong>Golden Age Movement (GAM)</strong> — conduzido por Sri Amma Bhagavan, com o programa global <em>81.000 Deeksha Yagna</em>, projeto coletivo de despertar em massa com meta para 2026–2027.</p></div>
+</div>
+</div>
+</section>
 
-      <div class="card">
-        <div class="card-icon">🕊️</div>
-        <h3>Ecumênico & Sem Dogmas</h3>
-        <p>
-          A Bênção da Unidade não exige crenças específicas nem renúncia à sua fé. Ela aprofunda a sua própria conexão interior — seja você cristão, budista, praticante de yoga, agnóstico ou um livre buscador da paz.
-        </p>
-      </div>
-    </section>
+<!-- FORMAS -->
+<section style="background:var(--deep)">
+<div class="container">
+<div class="reveal"><div class="slbl">Como é transmitida</div><h2 class="stit">Três formas de receber a bênção</h2><p class="ssub">A Deeksha pode ser transmitida de três maneiras. Todas válidas — o que varia é o canal, não a substância.</p></div>
+<div class="fg">
+<div class="forma reveal d1"><div class="fw">Sparsha Deeksha</div><span class="ft">Pelo toque</span><p>O Deekshagiver coloca as palmas suavemente sobre o topo da cabeça do receptor por alguns minutos. É a forma mais comum nos encontros presenciais.</p></div>
+<div class="forma reveal d2"><div class="fw">Nayano Deeksha</div><span class="ft">Pelo olhar</span><p>Transmissão por contato visual profundo. Comum em grupos menores. Alguns receptores relatam experiências mais intensas do que com o toque.</p></div>
+<div class="forma reveal d3"><div class="fw">Smarano Deeksha</div><span class="ft">Pela intenção</span><p>Transmissão à distância pela intenção consciente do Deekshagiver. Usada no programa global do GAM e em grupos online.</p></div>
+</div>
+</div>
+</section>
 
-    <section id="comunidade" class="event-banner">
-      <h2>Próximos Encontros no Parque da Cidade</h2>
-      <p>
-        Estamos organizando o nosso próximo encontro comunitário aberto com meditação guiada, música ambiente e transmissão coletiva de Deeksha. Junte-se ao nosso grupo de comunicados para receber as datas e locais exatos em primeira mão.
-      </p>
-      <a href="https://chat.whatsapp.com/convite-deeksha-brasilia" class="btn-gold" style="font-size: 1.1rem; padding: 1.25rem 2.5rem;">
-        Entrar no Grupo Oficial do WhatsApp ↗
-      </a>
-    </section>
-  </main>
+<!-- PERSONA BSB -->
+<section>
+<div class="container">
+<div class="reveal"><div class="slbl">Para quem é</div><h2 class="stit">Brasília tem um tipo específico de exaustão</h2><p class="ssub">A capital federal produz um estresse singular: intelectual, processual, de responsabilidade pública. A mente não desliga — ela apenas reclassifica ameaças.</p></div>
+<div class="pw reveal">
+<div><p class="pq">"Eu meditava toda manhã há dois anos. Minha mente continuava acelerada — só que agora com consciência plena da própria aceleração."</p><p class="pc">Relato comum entre profissionais de Brasília que chegaram à Deeksha depois de práticas contemplativas.</p></div>
+<div>
+<p class="plbl">A Deeksha encontra você</p>
+<ul class="pl">
+<li>Se você carrega decisões de outros como se fossem suas, e não sabe mais onde termina o cargo e você começa</li>
+<li>Se você já experimentou meditação, yoga ou terapia e sente que chegou a um teto — que falta algo que não é técnica</li>
+<li>Se você nunca se interessou por espiritualidade, mas está curioso por algo sem doutrina obrigatória</li>
+<li>Se você trabalha com pessoas sob pressão — saúde, direito, educação, serviço público — e seu sistema nervoso vive em modo de alerta crônico</li>
+<li>Se você quer experiência direta de silêncio, e não mais conceitos sobre paz</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
 
-  <footer>
-    <p>
-      © 2026 <strong>Deeksha Brasília</strong> — Movimento Comunitário da Bênção da Unidade.<br>
-      Espiritualidade Aterrada, Presença e Integração no Distrito Federal.
-    </p>
-  </footer>
+<!-- CTA EVENTO -->
+<section id="comunidade" style="background:var(--deep)">
+<div class="container">
+<div class="ev reveal">
+<h2>Encontros no Parque da Cidade</h2>
+<p>Realizamos encontros periódicos ao ar livre no Parque da Cidade Dona Sarah Kubitschek — em meio ao cerrado, sob o céu aberto do Planalto Central. Meditação em grupo, música harmoniosa e transmissão coletiva de Deeksha. Entrada gratuita, aberta ao público.</p>
+<a href="https://wa.me/556198138418?text=Ol%C3%A1%21+Quero+participar+dos+encontros+de+Deeksha+em+Bras%C3%ADlia." class="bp" target="_blank" rel="noopener">Saber a data do próximo encontro <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<div class="edet">
+<span><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Parque da Cidade, Brasília</span>
+<span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Datas via comunidade</span>
+<span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>~2h · Gratuito</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section>
+<div class="container">
+<div class="reveal"><div class="slbl">Dúvidas frequentes</div><h2 class="stit">Perguntas que quase todo mundo tem</h2></div>
+<div class="fw2 reveal">
+<div class="fi"><button class="fq" onclick="faq(this)">Preciso acreditar em algo para receber a Deeksha?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="fa">Não. Não há exigência de crença religiosa, espiritual ou filosófica. A Deeksha é transmitida a pessoas de qualquer fé — ou sem fé nenhuma. O único requisito é estar aberto a receber.</div></div>
+<div class="fi"><button class="fq" onclick="faq(this)">O que vou sentir durante a sessão?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="fa">As experiências variam. Alguns relatam calor suave, leveza, presença expandida ou lágrimas espontâneas de gratidão. Outros não sentem nada perceptível durante a sessão — e percebem a mudança nos dias seguintes: qualidade do sono, reações ao estresse, clareza de decisão.</div></div>
+<div class="fi"><button class="fq" onclick="faq(this)">Uma sessão é suficiente?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="fa">Uma sessão pode ser transformadora. Mas assim como uma chuva leve pode não saturar um solo seco, a maioria das pessoas se beneficia de sessões recorrentes — mensais ou quinzenais. O processo é cumulativo e aprofunda gradualmente a experiência de paz interior.</div></div>
+<div class="fi"><button class="fq" onclick="faq(this)">Os encontros têm algum custo?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="fa">Os encontros comunitários no Parque da Cidade são gratuitos e abertos ao público. Contribuições espontâneas são bem-vindas para cobrir custos operacionais — mas nunca obrigatórias. A Deeksha não tem preço de ingresso.</div></div>
+<div class="fi"><button class="fq" onclick="faq(this)">Quem são os Deekshagivers de Brasília?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="fa">Pessoas que completaram programas de formação na Oneness University ou em centros reconhecidos, mantendo prática regular e vínculo com a linhagem de Sri Amma Bhagavan. Os Deekshagivers deste grupo possuem qualificação verificada na tradição original.</div></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="flogo">DEEKSHA BRASÍLIA</div>
+<p>Movimento comunitário ecumênico da Bênção da Unidade no Distrito Federal.<br>Espiritualidade aterrada. Sem dogmas. Sem cobrança obrigatória.<br><span style="color:var(--gold);opacity:.6">deekshabrasilia.com.br</span></p>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add("visible")})},{threshold:.1});
+document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+function faq(btn){const i=btn.closest(".fi");const o=i.classList.contains("open");document.querySelectorAll(".fi").forEach(x=>x.classList.remove("open"));if(!o)i.classList.add("open")}
+</script>
 </body>
 </html>
