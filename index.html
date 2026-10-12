@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>document.documentElement.className+=" js"</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Deeksha Brasília — A Bênção da Unidade no Coração do Planalto</title>
@@ -159,7 +160,8 @@ footer{padding:2.75rem 1.5rem 2.25rem;border-top:1px solid var(--bdr);text-align
 .flogo{font-family:var(--fd);font-size:.78rem;letter-spacing:.22em;color:var(--gold);margin-bottom:.6rem}
 footer p{font-family:var(--fs);font-size:.73rem;color:var(--slate);line-height:1.65}
 
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
 @media(max-width:599px){
@@ -313,8 +315,11 @@ footer p{font-family:var(--fs);font-size:.73rem;color:var(--slate);line-height:1
 </footer>
 
 <script>
-const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add("visible")})},{threshold:.1});
-document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+const rv=document.querySelectorAll(".reveal");
+if(!("IntersectionObserver" in window)){rv.forEach(el=>el.classList.add("visible"))}
+else{const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("visible");obs.unobserve(x.target)}})},{threshold:.08,rootMargin:"0px 0px -40px 0px"});rv.forEach(el=>obs.observe(el));
+/* rede de seguranca: revela o que ja esta acima da dobra e revalida apos 2.5s */
+setTimeout(()=>{rv.forEach(el=>{const r=el.getBoundingClientRect();if(r.top<window.innerHeight*1.2)el.classList.add("visible")})},2500)}
 function faq(btn){const i=btn.closest(".fi");const o=i.classList.contains("open");document.querySelectorAll(".fi").forEach(x=>x.classList.remove("open"));if(!o)i.classList.add("open")}
 </script>
 </body>
