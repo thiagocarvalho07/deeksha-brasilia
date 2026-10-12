@@ -1,0 +1,5 @@
+*.md
+*.bak
+*.txt
+.gitignore
+.wrangler

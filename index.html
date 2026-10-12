@@ -24,13 +24,14 @@
   --r:1.25rem;--mw:1140px;--ease:cubic-bezier(.25,.46,.45,.94);
 }
 html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;max-width:100%}
 body{background:var(--void);color:var(--ivory);font-family:var(--fb);font-size:1.1rem;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 .container{max-width:var(--mw);margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
 nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(5,7,15,.78);border-bottom:1px solid var(--bdr)}
 .ni{max-width:var(--mw);margin:0 auto;padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.logo{font-family:var(--fd);font-size:.9rem;letter-spacing:.22em;color:var(--gold);font-weight:500;text-decoration:none;white-space:nowrap}
+.logo{font-family:var(--fd);font-size:.84rem;letter-spacing:.18em;color:var(--gold);font-weight:500;text-decoration:none;white-space:nowrap}
 .logo span{color:var(--ivory);opacity:.5}
-.ncta{font-family:var(--fs);font-size:.76rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.5rem 1.2rem;border:1px solid var(--bdrh);border-radius:9999px;color:var(--gpale);text-decoration:none;transition:all .3s var(--ease);min-height:44px;display:inline-flex;align-items:center}
+.ncta{font-family:var(--fs);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.5rem 1.15rem;border:1px solid var(--bdrh);border-radius:9999px;color:var(--gpale);text-decoration:none;transition:all .3s var(--ease);min-height:44px;display:inline-flex;align-items:center;white-space:nowrap;flex-shrink:0}
 .ncta:hover{background:var(--gold);color:var(--void)}
 section{padding:5rem 0;position:relative}
 .slbl{font-family:var(--fs);font-size:.67rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);opacity:.8;margin-bottom:.8rem}
@@ -54,6 +55,7 @@ section{padding:5rem 0;position:relative}
 .hlead{font-size:1.1rem;line-height:1.85;color:var(--slt);max-width:50ch;margin-bottom:1.9rem}
 .hlead strong{color:var(--ivory)}
 .crow{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+@media(max-width:420px){.crow{flex-direction:column;align-items:stretch;gap:.75rem}.crow .bp,.crow .bg2{width:100%;justify-content:center}}
 .hv{display:flex;justify-content:center;align-items:center}
 .mandala{position:relative;width:min(310px,82vw);height:min(310px,82vw)}
 .mr{position:absolute;inset:0;border-radius:50%;border:1px solid var(--bdr)}
@@ -169,7 +171,7 @@ footer p{font-family:var(--fs);font-size:.73rem;color:var(--slate);line-height:1
 </style>
 </head>
 <body>
-<nav><div class="ni"><a href="#" class="logo">DEEKSHA <span>BRASÍLIA</span></a><a href="#comunidade" class="ncta">Participar dos Encontros</a></div></nav>
+<nav><div class="ni"><a href="#" class="logo">DEEKSHA <span>BRASÍLIA</span></a><a href="#comunidade" class="ncta">Participar</a></div></nav>
 
 <!-- HERO -->
 <section class="hero">
